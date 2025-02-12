@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speedometer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="speedometer">
+    <div class="gear-display">
+      <span id="gear" class="gear-number">3</span>
+      <svg class="gear-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+        <path d="M13.41 7.89a1 1 0 0 0-.82-1.72l-1.18.21a1 1 0 0 1-1.21-.8l-.2-1.2a1 1 0 0 0-1.96 0l-.2 1.2a1 1 0 0 1-1.21.8l-1.18-.21a1 1 0 0 0-.82 1.72l.87.87a1 1 0 0 1 0 1.41l-.87.87a1 1 0 0 0 .82 1.72l1.18-.21a1 1 0 0 1 1.21.8l.2 1.2a1 1 0 0 0 1.96 0l.2-1.2a1 1 0 0 1 1.21-.8l1.18.21a1 1 0 0 0 .82-1.72l-.87-.87a1 1 0 0 1 0-1.41l.87-.87Z"/>
+      </svg>
+    </div>
+    <div class="speed-display">
+      <div class="speed" id="speed">089</div>
+      <div class="unit">KM/H</div>
+      <div class="rpm-container">
+        <div class="rpm-bar" id="rpm-bar"></div>
+        <div class="rpm-text">RPM</div>
+      </div>
+    </div>
+    <div class="fuel-display">
+      <svg class="fuel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 22V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v14M3 10h12M14 19h1a2 2 0 0 0 2-2v-2.5l2-2V17a2 2 0 0 1-2 2h-3"/>
+      </svg>
+      <div class="fuel-bar-container">
+        <div class="fuel-bar" id="fuel-bar"></div>
+      </div>
+      <div class="fuel-text">FUEL</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
